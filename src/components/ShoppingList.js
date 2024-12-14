@@ -1,19 +1,15 @@
-const plantList = [
-    'monstera',
-    'ficus lyrata',
-    'pothos argenté',
-    'yucca',
-    'palmier'
-]
+import { plantList } from '../datas/plantList'
 
 function ShoppingList() {
-    return (
-        <ul>
-            {plantList.map((plant, index) => (
-                <li key={`${plant}-${index}`}>{ plant }</li>
-            ))}
-        </ul>
-    )
+	return (
+		<div>
+			<ul>
+				{plantList.map((plant) => (
+					<li key={plant.id}><strong>{plant.category}</strong> {plant.name} {plant.isBestSale && <span>🔥</span>}</li> // Seulement si la condition est respectée
+				))}
+			</ul>
+		</div>
+	);
 }
 
-export default ShoppingList
+export default ShoppingList;
