@@ -2,7 +2,8 @@ export const plantList = [
 	{
 		name: 'monstera',
 		category: 'classique',
-		id: '1ed'
+		id: '1ed',
+		onSales: true
 	},
 	{
 		name: 'ficus lyrata',
@@ -23,7 +24,8 @@ export const plantList = [
 	{
 		name: 'olivier',
 		category: 'extérieur',
-		id: '5pl'
+		id: '5pl',
+		onSales: true
 	},
 	{
 		name: 'géranium',
