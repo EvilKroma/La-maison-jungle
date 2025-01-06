@@ -8,8 +8,9 @@ function Cart({ cart, updateCart }) {
 		0
 	)
 	useEffect(() => {
-		alert(`J'aurai ${total}€ à payer 💸`)
-	})
+		document.title = `LMJ: ${total}€ d'achats`
+	}, [total])
+
 	return isOpen ? (
 		<div className='lmj-cart'>
 			<button
